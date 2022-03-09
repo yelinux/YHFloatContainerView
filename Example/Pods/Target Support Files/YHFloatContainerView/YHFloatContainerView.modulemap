@@ -1,0 +1,6 @@
+framework module YHFloatContainerView {
+  umbrella header "YHFloatContainerView-umbrella.h"
+
+  export *
+  module * { export * }
+}

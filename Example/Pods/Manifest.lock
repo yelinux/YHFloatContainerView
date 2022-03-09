@@ -1,0 +1,23 @@
+PODS:
+  - Masonry (1.1.0)
+  - YHFloatContainerView (0.1.0)
+
+DEPENDENCIES:
+  - Masonry
+  - YHFloatContainerView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  YHFloatContainerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YHFloatContainerView: 2b4df648ba131a57b73011e33c0eec4aa0094019
+
+PODFILE CHECKSUM: f4c91d304f7185d511aaa30c8e4a0d78b50dfe42
+
+COCOAPODS: 1.11.2
