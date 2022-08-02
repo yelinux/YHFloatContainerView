@@ -23,7 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 内部合理高度，异步更新
 @property (nonatomic, assign, readonly) CGFloat contentHeight;
 /// 更新内部控件布局约束
--(void)updateUI;
+/// @param boundWidth 自身宽度
+-(void)updateUI: (CGFloat)boundWidth;
 
 @end
 

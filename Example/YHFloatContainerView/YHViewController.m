@@ -30,6 +30,7 @@
     containerTags.itemSpacing = 4;
     containerTags.lineSpacing = 4;
     containerTags.itemList = @[[self createAddBotton]];
+    [containerTags updateUI:CGRectGetWidth(self.view.bounds)];
     _containerTags = containerTags;
     
     YHFloatContainer *containerCus = [YHFloatContainer new];
@@ -37,6 +38,7 @@
     containerCus.itemSpacing = 10;
     containerCus.lineSpacing = 10;
     containerCus.itemList = [self createCusViews];
+    [containerCus updateUI:CGRectGetWidth(self.view.bounds)];
     _containerCus = containerCus;
     
     
@@ -66,6 +68,7 @@
     [itemView.btn addTarget:self action:@selector(clickDelButton:) forControlEvents:UIControlEventTouchUpInside];
     [itemList insertObject:itemView atIndex:itemList.count-1];
     container.itemList = itemList;
+    [container updateUI:CGRectGetWidth(self.view.bounds)];
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.tableView beginUpdates];
         [self.tableView endUpdates];
@@ -79,6 +82,7 @@
     NSMutableArray *itemList = container.itemList.mutableCopy;
     [itemList removeObject:itemView];
     container.itemList = itemList;
+    [container updateUI:CGRectGetWidth(self.view.bounds)];
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.tableView beginUpdates];
         [self.tableView endUpdates];
