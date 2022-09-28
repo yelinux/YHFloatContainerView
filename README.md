@@ -26,7 +26,7 @@ pod 'YHFloatContainerView', :git => 'https://github.com/yelinux/YHFloatContainer
 
 ## Author
 
-chenyehong, ye_linux@126.com
+chenyehong, ichenevan@126.com
 
 ## License
 
